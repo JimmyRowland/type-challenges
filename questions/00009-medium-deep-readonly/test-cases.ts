@@ -27,6 +27,9 @@ type X = {
   }
 }
 
+type test = DeepReadonly<X>
+const test1 = {} as test;
+
 type Expected = {
   readonly a: () => 22
   readonly b: string

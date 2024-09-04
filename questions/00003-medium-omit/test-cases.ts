@@ -22,3 +22,6 @@ interface Expected1 {
 interface Expected2 {
   title: string
 }
+
+type test1 = MyOmit<Todo, 'description'>
+const test2 = {} as test1

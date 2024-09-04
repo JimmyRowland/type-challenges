@@ -16,3 +16,5 @@ interface Todo2 {
   readonly description: string
   completed?: boolean
 }
+
+const test = {} as GetReadonlyKeys<Todo1>
