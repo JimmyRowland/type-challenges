@@ -27,9 +27,11 @@ type X1 = {
     }
   }
 }
-type test = DeepReadonly<X>
-const test1 = {} as test;
+type test = DeepReadonly<X1>
+const test1 = {} as test
+const test2 = test1.c.e.l
 type X2 = { a: string } | { b: number }
+const b = {} as (() => 2) extends object? true: false
 
 type Expected1 = {
   readonly a: () => 22
